@@ -4,6 +4,6 @@ class DeleteShopItemUseCase(private val shopListRepository: ShopListRepository) 
 
 
     fun deleteShopItem(shopItem:ShopItem){
-        TODO()
+        shopListRepository.deleteShopItem(shopItem)
     }
 }
