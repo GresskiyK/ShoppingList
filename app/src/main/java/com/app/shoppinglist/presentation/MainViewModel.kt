@@ -30,7 +30,7 @@ class MainViewModel : ViewModel() {
         return getShopListItemUseCase.getShopItem(index)
     }
 
-    fun editShopItemCase(item:ShopItem){
+    fun  changeShopItemState(item:ShopItem){
         val itemChanged = item.copy(enabled = !item.enabled)
         editShopItemUseCase.editShopItem(itemChanged)
 
